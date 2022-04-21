@@ -1,0 +1,106 @@
+.deposit__details {
+  @extend .container;
+  padding-top: 40px;
+}
+
+
+.type {
+  position: relative;
+
+  .type__title {
+    @extend .title;
+    color: $text-color--secondary;
+
+  }
+
+  .type__select {
+    top: 25px;
+    position: absolute;
+    width: 100%;
+    border: 2px solid $border-color;
+    border-radius: 9px;
+
+    cursor: pointer;
+  }
+
+  .select-value {
+    display: flex;
+    padding: 13px 15px 14px 20px;
+
+
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+    color: $text-color--main;
+
+    .select-current {
+      @extend .select-title;
+    }
+
+    .select-icon {
+      fill: currentColor;
+    }
+  }
+
+  .select-options {
+    display: none;
+    padding: 10px 0px 10px 14px;
+    background-color: #ffffff;
+
+    @extend .select-title;
+
+    .select-item:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    .select-item:hover {
+      color: $accent-color;
+    }
+
+    &.is-active {
+      display: none !important;
+    }
+  }
+
+  .select-options.is-open {
+    display: block;
+  }
+
+
+}
+
+
+
+
+.currency {
+  display: flex;
+  margin-top: 86px;
+  justify-content: space-between;
+
+  .currency__button {
+    border: none;
+    background-color: transparent;
+
+    @extend .title;
+    font-weight: 700;
+    color: $text-color--main;
+
+    cursor: pointer;
+  }
+
+  .currency__button.current {
+    padding-bottom: 7px;
+    border-bottom: 3px solid $accent-color;
+    color: $accent-color;
+  }
+
+  .currency__button:hover {
+    padding-bottom: 7px;
+    border-bottom: 3px solid $accent-color;
+    color: $accent-color;
+  }
+
+
+
+}

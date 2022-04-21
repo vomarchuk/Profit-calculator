@@ -1,1 +1,3 @@
-import './sass/main.scss';
+import './main.scss';
+
+import './js/select';
