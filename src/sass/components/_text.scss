@@ -1,7 +1,9 @@
 .title {
   font-size: 18px;
-  line-height: 21px;
-  font-family: 'Roboto';
+  line-height: 24px;
+  color: $text-color--secondary;
+  font-weight: 500;
+
 }
 
 .select-title {
@@ -9,4 +11,5 @@
   font-size: 16px;
   line-height: 21px;
   font-family: 'Roboto Medium';
+  color: $text-color--main;
 }

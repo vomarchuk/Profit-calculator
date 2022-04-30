@@ -7,14 +7,8 @@
 .type {
   position: relative;
 
-  .type__title {
-    @extend .title;
-    color: $text-color--secondary;
-
-  }
-
   .type__select {
-    top: 25px;
+    margin-top: 10px;
     position: absolute;
     width: 100%;
     border: 2px solid $border-color;
@@ -45,7 +39,7 @@
 
   .select-options {
     display: none;
-    padding: 10px 0px 10px 14px;
+    padding: 10px 0px 10px 20px;
     background-color: #ffffff;
 
     @extend .select-title;
@@ -78,15 +72,15 @@
   margin-top: 86px;
   justify-content: space-between;
 
+
   .currency__button {
     border: none;
     background-color: transparent;
 
-    @extend .title;
     font-weight: 700;
-    color: $text-color--main;
-
     cursor: pointer;
+
+
   }
 
   .currency__button.current {
@@ -100,7 +94,138 @@
     border-bottom: 3px solid $accent-color;
     color: $accent-color;
   }
+}
+
+.amount__investment {
+  margin-top: 40px;
+
+  .input-box {
+    position: relative;
+    margin-top: 7px;
+
+    .input {
+      width: 100%;
+
+      padding: 15px 0 15px 20px;
+      border: 2px solid $border-color;
+      border-radius: 9px;
+
+      outline: none;
 
 
+      color: $text-color--main;
+    }
 
+
+    .input__currency {
+      position: absolute;
+      opacity: 0.2;
+      right: 20px;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      font-size: 14px;
+      font-weight: 500;
+      color: $text-color--secondary;
+
+    }
+  }
+}
+
+.term__investment {
+  margin-top: 40px;
+
+  .input-box {
+
+    .input {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .tickmarks__list {
+      display: flex;
+
+      color: $border-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+
+    }
+
+    .tickmarks__list :nth-child(2) {
+      margin-left: 20px;
+    }
+
+    .tickmarks__list :nth-child(3) {
+      margin-left: 17px;
+    }
+
+    .tickmarks__list :nth-child(1n+4) {
+      margin-left: 16px;
+
+    }
+
+    .tickmarks__list :nth-child(10) {
+      margin-left: 13px;
+    }
+
+    .tickmarks__list :nth-child(11) {
+      margin-left: 9px;
+    }
+
+    .tickmarks__list :nth-child(12) {
+      margin-left: 9px;
+    }
+
+
+  }
+
+  .interest__rate {
+
+    margin-top: 43px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: $bg-color;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    .rate {
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+
+      color: $text-color--main;
+    }
+
+    .span {
+      font-size: 14px;
+      line-height: 16px;
+      color: $text-color--secondary;
+    }
+  }
+}
+
+.period__investment {
+  margin-top: 40px;
+
+  .start__investment {}
+
+  .end__investment {
+    margin-top: 40px;
+  }
+
+  .datepicker {
+    width: 100%;
+    margin-top: 10px;
+
+    padding: 16px 20px;
+
+    border: 2px solid $border-color;
+    border-radius: 9px;
+
+    outline: none;
+  }
 }

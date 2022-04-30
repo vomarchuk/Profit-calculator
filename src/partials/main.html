@@ -3,10 +3,10 @@
   <section class="deposit__details">
     <form class="deposit__details-form" name="details-deposit" action="data-deposit">
       <div class="type">
-        <h2 class="type__title">Type of deposit</h2>
+        <h2 class="title">Type of deposit</h2>
         <div class="type__select">
           <div class="select-value">
-            <span class="select-current">Standard</span
+            <span class="select-title select-current">Standard</span
             ><svg class="select-icon" width="24" height="24">
               <use xlink:href="images/icon/sprite.svg#icon-expand" />
             </svg>
@@ -35,9 +35,54 @@
           <button type="button" class="currency__button" data-currency="RUB">RUB</button>
         </li>
       </ul>
-      <div class="amount__investment"><label for=""></label></div>
-      <div class="start_investment"></div>
-      <div class="end_investment"></div>
+      <div class="amount__investment">
+        <h2 class="title">Amount of investment</h2>
+        <div class="input-box">
+          <input class="input" type="text" placeholder="amount" /><span class="input__currency"
+            >PLN</span
+          >
+        </div>
+      </div>
+      <div class="term__investment">
+        <div class="input-box">
+          <label class="title"
+            >Investment term (Months)
+            <input class="input" type="range" min="1" max="12" step="1" />
+          </label>
+          <ul class="tickmarks__list">
+            <li class="tickmarks__item">1</li>
+            <li class="tickmarks__item">2</li>
+            <li class="tickmarks__item">3</li>
+            <li class="tickmarks__item">4</li>
+            <li class="tickmarks__item">5</li>
+            <li class="tickmarks__item">6</li>
+            <li class="tickmarks__item">7</li>
+            <li class="tickmarks__item">8</li>
+            <li class="tickmarks__item">9</li>
+            <li class="tickmarks__item">10</li>
+            <li class="tickmarks__item">11</li>
+            <li class="tickmarks__item">12</li>
+          </ul>
+        </div>
+        <div class="interest__rate">
+          <h2 class="title">Interest rate</h2>
+          <p class="rate">0.75% <span class="span">in a day</span></p>
+        </div>
+      </div>
+      <div class="period__investment">
+        <div class="start__investment">
+          <label class="title"
+            >Start of investment
+            <input type="date" class="datepicker" autocomplete="off" />
+          </label>
+        </div>
+        <div class="end__investment">
+          <label class="title"
+            >End of investment
+            <input type="date" class="datepicker" autocomplete="off" />
+          </label>
+        </div>
+      </div>
     </form>
   </section>
 </article>
