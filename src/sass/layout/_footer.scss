@@ -1,0 +1,45 @@
+.footer {
+  @extend .container;
+  padding-top: 40px;
+  padding-bottom: 74px;
+
+  background-color: $bg-color;
+
+  .list {}
+
+  .list__item {
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 24px;
+
+    color: $text-color--secondary;
+  }
+
+  .return__investment {
+    border-top: 1px solid;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .footer__btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px 0;
+
+    border: none;
+    border-radius: 0px 90px;
+
+    background-color: $accent-color;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $text-color--main;
+
+  }
+}
