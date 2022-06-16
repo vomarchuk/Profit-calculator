@@ -19,26 +19,30 @@
         </div>
       </div>
       <ul class="currency">
-        <li class="currency__item" action>
-          <button type="button" class="currency__button current" data-currency="PLN">PLN</button>
+        <li class="currency__item">
+          <button type="button" class="currency__button currency__button--current" data-value="PLN">
+            PLN
+          </button>
         </li>
         <li class="currency__item">
-          <button type="button" class="currency__button" data-currency="UAH">UAH</button>
+          <button type="button" class="currency__button" data-value="UAH">UAH</button>
         </li>
         <li class="currency__item">
-          <button type="button" class="currency__button" data-currency="EUR">EUR</button>
+          <button type="button" class="currency__button" data-value="EUR">EUR</button>
         </li>
         <li class="currency__item">
-          <button type="button" class="currency__button" data-currency="USD">USD</button>
+          <button type="button" class="currency__button" data-value="USD">USD</button>
         </li>
         <li class="currency__item">
-          <button type="button" class="currency__button" data-currency="RUB">RUB</button>
+          <button type="button" class="currency__button" data-value="RUB">RUB</button>
         </li>
       </ul>
       <div class="amount__investment">
         <h2 class="title">Amount of investment</h2>
         <div class="input-box">
-          <input class="input" type="text" placeholder="amount" /><span class="input__currency"
+          <input class="range js__amount-range" type="range" />
+          <input class="input js__amount-input" type="text" placeholder="amount" /><span
+            class="input__currency js-currentCurrency"
             >PLN</span
           >
         </div>
@@ -46,9 +50,8 @@
       <div class="term__investment">
         <div class="input-box">
           <label class="title"
-            >Investment term (Months)
-            <input class="input" type="range" min="1" max="12" step="1" />
-          </label>
+            >Investment term (Months) <input class="input" type="range" min="1" max="12" step="1"
+          /></label>
           <ul class="tickmarks__list">
             <li class="tickmarks__item">1</li>
             <li class="tickmarks__item">2</li>
@@ -72,15 +75,13 @@
       <div class="period__investment">
         <div class="start__investment">
           <label class="title"
-            >Start of investment
-            <input type="date" class="datepicker" autocomplete="off" />
-          </label>
+            >Start of investment <input type="date" class="datepicker" autocomplete="off"
+          /></label>
         </div>
         <div class="end__investment">
           <label class="title"
-            >End of investment
-            <input type="date" class="datepicker" autocomplete="off" />
-          </label>
+            >End of investment <input type="date" class="datepicker end" autocomplete="off"
+          /></label>
         </div>
       </div>
     </form>
