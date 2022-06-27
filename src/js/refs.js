@@ -7,9 +7,13 @@ const refs = {
 
   amountInvestmentRange: document.querySelector('.js__amount-range'),
   amountInvestmentInput: document.querySelector('.js__amount-input'),
-  amountInvestmentInput: document.querySelector('.js__amount-input'),
 
-  currentCurrencyValue: document.querySelectorAll('.js-currentCurrency'),
-  currentAmount: document.querySelectorAll('.js-currentAmount'),
+  currentCurrencyValue: document.querySelectorAll('.js__current-currency'),
+  currentInvestment: document.querySelector('.js__current-investment'),
+  rate: document.querySelector('.js__rate'),
+  interestRate: document.querySelector('.js__interest-rate'),
+
+  startDate: document.querySelector('.js__datepicker-start'),
+  endDate: document.querySelector('.js__datepicker-end'),
 };
 export default refs;

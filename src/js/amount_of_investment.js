@@ -1,16 +1,13 @@
 import refs from './refs';
-// import selectedCurrency from './currency';
-// console.log(selectedCurrency);
-const { amountInvestmentRange, amountInvestmentInput } = refs;
-console.log(amountInvestmentRange, amountInvestmentInput);
+const { amountInvestmentRange, amountInvestmentInput, currentInvestment } = refs;
 
-console.log(amountInvestmentInput.value);
+const getAmountOfInvestment = e => {
+  let value = 0;
+  value = e.currentTarget.value;
+  amountInvestmentInput.value = value;
+  amountInvestmentRange.value = value;
+  currentInvestment.textContent = value;
+};
 
-amountInvestmentInput.addEventListener('input', e => {
-  console.log(e.currentTarget.value);
-});
-
-amountInvestmentRange.addEventListener('change', e => {
-  console.log(e.currentTarget.value);
-  e.currentTarget.value = 99;
-});
+amountInvestmentRange.addEventListener('change', getAmountOfInvestment);
+amountInvestmentInput.addEventListener('input', getAmountOfInvestment);
