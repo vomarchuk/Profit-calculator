@@ -9,7 +9,10 @@ const getTypeOfDeposit = e => {
   selectCurrent.textContent = result;
   getInterestRate(result);
 
-  localStorage.setItem('typeOfDeposit', result);
+  const resultOnInvestment = JSON.parse(localStorage.getItem('resultOnInvestment'));
+  resultOnInvestment.typeOfDeposit = result;
+
+  localStorage.setItem('resultOnInvestment', JSON.stringify(resultOnInvestment));
 };
 
 getInterestRate(selectCurrent.textContent);

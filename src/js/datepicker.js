@@ -11,8 +11,17 @@ startDate.value = dateNow;
 
 endDate.min = dateNow;
 
-$('.datepicker').datepicker();
+$('#datepicker-start').datepicker({
+  dateFormat: 'yy-mm-dd',
 
-const options = $('.datepicker').datepicker('options', 'disabled');
+  minDate: 'dateNow',
+  firstDay: 1,
+});
 
-console.log(options);
+$('#datepicker-end').datepicker({
+  dateFormat: 'yy-mm-dd',
+
+  minDate: 'dateNow',
+  firstDay: 1,
+  maxDate: '+1m',
+});

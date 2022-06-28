@@ -1,5 +1,5 @@
 import refs from '../refs';
-const { interestRate, rate } = refs;
+const { interestRate } = refs;
 import {
   TYPE_STANDARD,
   TYPE_PREMIUM,
@@ -22,11 +22,11 @@ const getInterestRate = type => {
     case TYPE_VIP:
       percent = VIP_PERCENT;
       break;
-
-    default:
-      percent = 0;
   }
-  localStorage.setItem('interest rate', percent);
   interestRate.textContent = `${percent}%`;
+
+  const result = JSON.parse(localStorage.getItem('resultOnInvestment'));
+  if (percent) result.interestRate = percent;
+  localStorage.setItem('resultOnInvestment', JSON.stringify(result));
 };
 export { getInterestRate };

@@ -7,6 +7,12 @@ const getAmountOfInvestment = e => {
   amountInvestmentInput.value = value;
   amountInvestmentRange.value = value;
   currentInvestment.textContent = value;
+
+  const resultOnInvestment = JSON.parse(localStorage.getItem('resultOnInvestment'));
+  resultOnInvestment.amountOfInvestment = value;
+
+  localStorage.setItem('amount of investment', value);
+  localStorage.setItem('resultOnInvestment', JSON.stringify(resultOnInvestment));
 };
 
 amountInvestmentRange.addEventListener('change', getAmountOfInvestment);

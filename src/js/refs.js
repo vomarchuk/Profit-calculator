@@ -4,11 +4,12 @@ const refs = {
   selectDrop: document.querySelector('.select-options'),
 
   currency: document.querySelector('.currency'),
+  currentCurrencyValue: document.querySelectorAll('.js__current-currency'),
+  currentActiveCurrency: document.querySelector('.currency__button--current'),
 
   amountInvestmentRange: document.querySelector('.js__amount-range'),
   amountInvestmentInput: document.querySelector('.js__amount-input'),
 
-  currentCurrencyValue: document.querySelectorAll('.js__current-currency'),
   currentInvestment: document.querySelector('.js__current-investment'),
   rate: document.querySelector('.js__rate'),
   interestRate: document.querySelector('.js__interest-rate'),
