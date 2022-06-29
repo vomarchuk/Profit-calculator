@@ -23,10 +23,11 @@ const getInterestRate = type => {
       percent = VIP_PERCENT;
       break;
   }
-  interestRate.textContent = `${percent}%`;
 
   const result = JSON.parse(localStorage.getItem('resultOnInvestment'));
-  if (percent) result.interestRate = percent;
+  result.interestRate = percent;
   localStorage.setItem('resultOnInvestment', JSON.stringify(result));
+
+  interestRate.textContent = `${result.interestRate}%`;
 };
 export { getInterestRate };

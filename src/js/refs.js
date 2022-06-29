@@ -7,6 +7,7 @@ const refs = {
   currentCurrencyValue: document.querySelectorAll('.js__current-currency'),
   currentActiveCurrency: document.querySelector('.currency__button--current'),
 
+  currencyBtn: document.querySelectorAll('.currency__button'),
   amountInvestmentRange: document.querySelector('.js__amount-range'),
   amountInvestmentInput: document.querySelector('.js__amount-input'),
 
