@@ -1,0 +1,75 @@
+@media screen and (min-width:480px) {
+  .type {
+    .type__select {
+      width: 280px;
+    }
+  }
+
+  .currency {
+    width: 255px;
+  }
+
+  .amount__investment {
+    .input-box {
+      display: flex;
+      justify-content: space-between;
+
+      font-size: 14px;
+
+      .range {
+        display: block;
+        width: 240px;
+      }
+
+      .input {
+        width: 160px;
+      }
+    }
+  }
+
+  .term__investment {
+    .input-box {
+
+
+      .input {
+        width: 440px;
+        margin-top: 15px;
+      }
+
+      .tickmarks__list :nth-child(2) {
+        margin-left: 31px;
+      }
+
+      .tickmarks__list :nth-child(3) {
+        margin-left: 31px;
+      }
+
+      .tickmarks__list :nth-child(4) {
+        margin-left: 30px;
+
+      }
+
+      .tickmarks__list :nth-child(1n+5) {
+        margin-left: 31px;
+
+
+      }
+
+      .tickmarks__list :nth-child(9) {
+        margin-left: 30px;
+      }
+
+      .tickmarks__list :nth-child(10) {
+        margin-left: 27px;
+      }
+
+      .tickmarks__list :nth-child(11) {
+        margin-left: 23px;
+      }
+
+      .tickmarks__list :nth-child(12) {
+        margin-left: 24px;
+      }
+    }
+  }
+}

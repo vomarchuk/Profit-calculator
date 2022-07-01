@@ -16,7 +16,7 @@ const getTypeOfDeposit = e => {
   getInterestRate(result);
 };
 
-const resultOnInvestment = JSON.parse(localStorage.getItem('resultOnInvestment'));
+// const resultOnInvestment = JSON.parse(localStorage.getItem('resultOnInvestment'));
 
 // selectCurrent.textContent = resultOnInvestment.typeOfDeposit;
 

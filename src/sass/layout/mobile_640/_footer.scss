@@ -1,0 +1,28 @@
+.footer {
+  @extend .container;
+  padding-top: 40px;
+  padding-bottom: 74px;
+
+  background-color: $bg-color;
+
+
+  .list__item {
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 24px;
+    color: $text-color--secondary;
+
+  }
+
+  .return__investment {
+    border-top: 1px solid;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    .sum {
+      font-weight: 900;
+      color: $text-color--main;
+    }
+  }
+}

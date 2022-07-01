@@ -1,0 +1,80 @@
+@media screen and (min-width:640px) {
+  .currency {
+    margin-top: 27px;
+    margin-left: 300px;
+  }
+
+  .amount__investment {
+    .input-box {
+      .range {
+        width: 360px;
+      }
+
+      .input {
+        width: 200px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .term__investment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .input-box {
+      width: 360px;
+
+      .input {
+        width: 360px;
+      }
+
+
+
+      .tickmarks__list :nth-child(2) {
+        margin-left: 23px;
+      }
+
+      .tickmarks__list :nth-child(3) {
+        margin-left: 25px;
+      }
+
+
+
+      .tickmarks__list :nth-child(1n+4) {
+        margin-left: 23px;
+
+
+      }
+
+      .tickmarks__list :nth-child(8) {
+        margin-left: 24px;
+      }
+
+      .tickmarks__list :nth-child(9) {
+        margin-left: 24px;
+      }
+
+      .tickmarks__list :nth-child(10) {
+        margin-left: 18px;
+      }
+
+      .tickmarks__list :nth-child(11) {
+        margin-left: 18px;
+      }
+
+      .tickmarks__list :nth-child(12) {
+        margin-left: 14px;
+      }
+
+
+    }
+
+    .interest__rate {
+      width: 200px;
+      margin-top: 0;
+
+    }
+  }
+
+}

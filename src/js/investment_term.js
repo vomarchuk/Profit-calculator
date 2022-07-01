@@ -1,7 +1,12 @@
-const termInvestment = document.querySelector('.js__term-investment');
-const getTermInvestment = e => {
+import refs from './refs';
+const { investmentTerm } = refs;
+const getInvestmentTerm = e => {
   const result = +e.target.value;
-  return result;
+
+  const resultOnInvestment = JSON.parse(localStorage.getItem('resultOnInvestment'));
+  resultOnInvestment.investmentTerm = result;
+
+  localStorage.setItem('resultOnInvestment', JSON.stringify(resultOnInvestment));
 };
 
-termInvestment.addEventListener('change', getTermInvestment);
+investmentTerm.addEventListener('change', getInvestmentTerm);

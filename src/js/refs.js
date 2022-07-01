@@ -11,6 +11,8 @@ const refs = {
   amountInvestmentRange: document.querySelector('.js__amount-range'),
   amountInvestmentInput: document.querySelector('.js__amount-input'),
 
+  investmentTerm: document.querySelector('.js__term-investment'),
+
   currentInvestment: document.querySelector('.js__current-investment'),
   rate: document.querySelector('.js__rate'),
   interestRate: document.querySelector('.js__interest-rate'),
