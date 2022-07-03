@@ -1,0 +1,12 @@
+@media screen and (min-width:960px) {
+  .header__title {
+    padding-top: 94px;
+
+    font-size: 36px;
+    line-height: 42px;
+
+    &::before {
+      margin-right: 20px;
+    }
+  }
+}
