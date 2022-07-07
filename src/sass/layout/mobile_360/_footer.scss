@@ -5,6 +5,12 @@
 
   background-color: $bg-color;
 
+  .columns {
+    display: none;
+
+  }
+
+
 
   .list__item {
     display: flex;

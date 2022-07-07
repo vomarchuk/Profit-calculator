@@ -39,8 +39,15 @@
       <div class="amount__investment">
         <h2 class="title">Amount of investment</h2>
         <div class="input-box">
-          <input class="range js__amount-range" value="0" min="0" max="50000" type="range" />
-          <input class="input js__amount-input" type="text" placeholder="0" /><span
+          <input
+            class="range js__amount-range"
+            value="0"
+            min="1000"
+            step="100"
+            max="50000"
+            type="range"
+          />
+          <input class="input js__amount-input" type="text" value="1000" placeholder="0" /><span
             class="input__currency js__currentCurrency"
             >PLN</span
           >

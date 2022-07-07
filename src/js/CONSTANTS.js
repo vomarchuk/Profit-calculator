@@ -10,7 +10,7 @@ const DEFAULT = {
   typeOfDeposit: TYPE_STANDARD,
   interestRate: STANDARD_PERCENT,
   currency: 'PLN',
-  amountOfInvestment: 0,
+  amountOfInvestment: 1000,
   investmentTerm: 1,
 };
 
