@@ -13,11 +13,14 @@ const refs = {
 
   investmentTerm: document.querySelector('.js__term-investment'),
 
-  currentInvestment: document.querySelector('.js__current-investment'),
+  currentInvestment: document.querySelectorAll('.js__current-investment'),
+  currentInvestmentProfit: document.querySelectorAll('.js__current-investmentProfit'),
+  currentInvestmentPercents: document.querySelector('.js__current-InvestmentPercents'),
+
   rate: document.querySelector('.js__rate'),
   interestRate: document.querySelector('.js__interest-rate'),
 
-  startDate: document.querySelector('.js__datepicker-start'),
-  endDate: document.querySelector('.js__datepicker-end'),
+  columnInvested: document.querySelectorAll('.js__column-invested'),
+  columnEarn: document.querySelector('.js__column-earn'),
 };
 export default refs;

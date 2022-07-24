@@ -153,8 +153,8 @@
 
 
     .input {
-      width: 280px;
       margin-top: 15px;
+      width: 280px;
       align-items: center;
     }
 
@@ -225,31 +225,4 @@
       color: $text-color--secondary;
     }
   }
-}
-
-.period__investment {
-  margin-top: 40px;
-
-
-  .end__investment {
-    margin-top: 40px;
-  }
-
-  .end__investment .datepicker {
-
-    color: $text-color--secondary;
-  }
-
-  // .datepicker {
-  //   width: 100%;
-  //   margin-top: 10px;
-
-  //   padding: 16px 20px;
-
-  //   border: 2px solid $border-color;
-  //   border-radius: 9px;
-
-  //   outline: none;
-
-  // }
 }

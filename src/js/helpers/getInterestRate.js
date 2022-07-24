@@ -1,4 +1,7 @@
 import refs from '../refs';
+import { getTotalProfit } from './getTotalProfit';
+import { changeColumn } from './changeColumn';
+
 const { interestRate } = refs;
 import {
   TYPE_STANDARD,
@@ -29,5 +32,8 @@ const getInterestRate = type => {
   localStorage.setItem('resultOnInvestment', JSON.stringify(result));
 
   interestRate.textContent = `${result.interestRate}%`;
+
+  getTotalProfit(result);
+  changeColumn();
 };
 export { getInterestRate };

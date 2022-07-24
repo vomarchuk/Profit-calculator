@@ -1,5 +1,9 @@
 import refs from './refs';
+import { getTotalProfit } from './helpers/getTotalProfit';
+import { changeColumn } from './helpers/changeColumn';
+
 const { investmentTerm } = refs;
+
 const getInvestmentTerm = e => {
   const result = +e.target.value;
 
@@ -7,6 +11,8 @@ const getInvestmentTerm = e => {
   resultOnInvestment.investmentTerm = result;
 
   localStorage.setItem('resultOnInvestment', JSON.stringify(resultOnInvestment));
+  getTotalProfit(resultOnInvestment);
+  changeColumn();
 };
 
 investmentTerm.addEventListener('change', getInvestmentTerm);

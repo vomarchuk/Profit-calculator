@@ -8,6 +8,42 @@
       .tickmarks__list {
         font-size: 16px;
       }
+
+      .tickmarks__list :nth-child(2) {
+        margin-left: 22px;
+      }
+
+      .tickmarks__list :nth-child(3) {
+        margin-left: 23px;
+      }
+
+
+
+      .tickmarks__list :nth-child(1n+4) {
+        margin-left: 22px;
+
+
+      }
+
+      .tickmarks__list :nth-child(8) {
+        margin-left: 23px;
+      }
+
+      .tickmarks__list :nth-child(9) {
+        margin-left: 24px;
+      }
+
+      .tickmarks__list :nth-child(10) {
+        margin-left: 16px;
+      }
+
+      .tickmarks__list :nth-child(11) {
+        margin-left: 14px;
+      }
+
+      .tickmarks__list :nth-child(12) {
+        margin-left: 14px;
+      }
     }
 
 

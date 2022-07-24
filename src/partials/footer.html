@@ -3,14 +3,20 @@
     <ul class="columns">
       <li class="columns__list you__invested">
         <h2 class="title footer__title">You invested</h2>
-        <p class="column__amount">10000 RUB</p>
-        <div class="column__invested"></div>
+        <p class="column__amount">
+          <span class="js__current-investment">0</span>
+          <span class="js__current-currency">PLN</span>
+        </p>
+        <div class="column__invested js__column-invested"></div>
       </li>
       <li class="columns__list you__earn">
         <h2 class="title footer__title">You earn</h2>
-        <p class="column__amount">9150 RUB</p>
-        <div class="column__earn"></div>
-        <div class="column__invested right"></div>
+        <p class="column__amount">
+          <span class="js__current-investmentProfit">0</span>
+          <span class="js__current-currency">PLN</span>
+        </p>
+        <div class="column__earn js__column-earn"></div>
+        <div class="column__invested right js__column-invested"></div>
       </li>
     </ul>
     <ul class="list">
@@ -23,13 +29,18 @@
       </li>
       <li class="list__item">
         <h2 class="title footer__title">Profit percentage</h2>
-        <p class="percent">91.5 %</p>
+        <p class="percent">
+          <span class="js__current-InvestmentPercents">0</span>
+          <span>%</span>
+        </p>
       </li>
-      <!-- <li class="list__item"></li> -->
     </ul>
     <div class="list__item return__investment">
       <h2 class="title footer__title">Return on investment</h2>
-      <p class="sum">9,150 <span class="js__current-currency">PLN</span></p>
+      <p class="sum">
+        <span class="js__current-investmentProfit">0</span>
+        <span class="js__current-currency">PLN</span>
+      </p>
     </div>
     <button type="button" class="button">Invest now</button>
   </section>
