@@ -27,4 +27,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./refs":"VyiV","./helpers/getTotalProfit":"Nvuj","./helpers/changeColumn":"RWGA"}],"Focm":[function(require,module,exports) {
 "use strict";require("./main.scss"),require("./js/default"),require("./js/main"),require("./js/currency"),require("./js/amount_of_investment"),require("./js/type_of_deposit"),require("./js/investment_term");
 },{"./main.scss":"yCDU","./js/default":"egzs","./js/main":"d6sW","./js/currency":"EDpy","./js/amount_of_investment":"iCzY","./js/type_of_deposit":"f25i","./js/investment_term":"zsUL"}]},{},["Focm"], null)
-//# sourceMappingURL=/Profit-calculator/src.84ea508c.js.map
+//# sourceMappingURL=/Profit-calculator/src.1d2a58ff.js.map
