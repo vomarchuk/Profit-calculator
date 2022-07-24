@@ -16,4 +16,11 @@
     text-transform: uppercase;
 
     color: $text-color--main;
+
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: $text-color--main;
+    color: $accent-color;
   }
