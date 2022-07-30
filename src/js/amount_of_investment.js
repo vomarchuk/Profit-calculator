@@ -7,14 +7,17 @@ const { amountInvestmentRange, amountInvestmentInput, currentInvestment, current
 const getAmountOfInvestment = e => {
   const resultOnInvestment = JSON.parse(localStorage.getItem('resultOnInvestment'));
   let value;
+
   value = e.currentTarget.value;
+  if (e.currentTarget.value > 50000) {
+    e.currentTarget.value = 50000;
+    return;
+  }
   amountInvestmentInput.value = value;
   amountInvestmentRange.value = value;
-
   currentInvestment.forEach(item => {
     item.textContent = value;
   });
-
   resultOnInvestment.amountOfInvestment = +value;
 
   localStorage.setItem('resultOnInvestment', JSON.stringify(resultOnInvestment));
