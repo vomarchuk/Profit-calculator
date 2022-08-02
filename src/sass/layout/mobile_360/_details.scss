@@ -168,6 +168,11 @@
       line-height: 18px;
       margin-left: 4px;
 
+      .tickmarks__item.tickmarks__item--isActive {
+        color: $text-color--main;
+
+      }
+
     }
 
     .tickmarks__list :nth-child(2) {

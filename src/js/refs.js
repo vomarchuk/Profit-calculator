@@ -12,6 +12,7 @@ const refs = {
   amountInvestmentInput: document.querySelector('.js__amount-input'),
 
   investmentTerm: document.querySelector('.js__term-investment'),
+  tickMarksItem: document.querySelectorAll('.tickmarks__item'),
 
   currentInvestment: document.querySelectorAll('.js__current-investment'),
   currentInvestmentProfit: document.querySelectorAll('.js__current-investmentProfit'),
